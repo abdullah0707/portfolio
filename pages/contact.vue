@@ -89,12 +89,12 @@
         <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="3"
           title="Your message was sent successfully!"
           description="Thank you for sending. Your message has been received. I will contact you as soon as possible."
-          :close-button="null" :callback="onCallback()" :timeout="3000" />
+          :close-button="null" :callback="onCallback()" :timeout="timer" />
       </div>
       <div class="my-4">
         <UNotification v-if="errors" label="Show toast" icon="i-heroicons-x-circle" color="red" :id="6"
           title="Your message was not sent!"
-          description="I am sorry that your message did not reach me. Please try sending it again." :timeout="3000"
+          description="I am sorry that your message did not reach me. Please try sending it again." :timeout="timer"
           :callback="onCallback()" :close-button="null" />
       </div>
     </div>
@@ -106,6 +106,7 @@
 const waiting = ref(false);
 const errors = ref(false);
 const succsess = ref(false);
+const timer = ref(3000);
 
 useHead({
   titleTemplate: "%s Contact us",
@@ -123,9 +124,9 @@ const form = ref({
 });
 function onCallback() {
   setTimeout(() => {
-    this.succsess = false;
-    this.errors = false;
-  }, 3000);
+    succsess.value = false;
+    errors.value = false;
+  }, timer.value);
 }
 async function SubmitForm(form) {
   waiting.value = true;
