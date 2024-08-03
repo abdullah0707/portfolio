@@ -40,7 +40,6 @@
          </ul>
       </div>
       <slot />
-      <UNotifications />
    </div>
 </template>
 

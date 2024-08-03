@@ -10,7 +10,7 @@
                 Name
               </span>
               <input type="name" name="name" id="name" v-model="form.name" required
-                class="mt-1 px-3 py-2 text-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-1"
+                class="mt-1 px-3 py-2  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="Your Name" />
             </label>
           </div>
@@ -20,7 +20,7 @@
                 Email
               </span>
               <input type="email" name="email" id="email" v-model="form.email" required
-                class="peer mt-1 px-3 py-2 text-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-1"
+                class="peer mt-1 px-3 py-2  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="you@example.com" />
             </label>
           </div>
@@ -52,7 +52,7 @@
                 Subject
               </span>
               <input type="text" name="subject" id="subject" v-model="form.subject" required
-                class="mt-1 px-3 py-2 text-white  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
+                class="mt-1 px-3 py-2   border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
                 placeholder="Topic title" />
             </label>
 
@@ -64,11 +64,9 @@
                 Message
               </span>
               <textarea id="message" name="message" v-model="form.message" type="textarea" required
-                class="mt-1 px-3 py-2 text-white  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
+                class="mt-1 px-3 py-2   border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
                 placeholder="Your letter" />
             </label>
-            <!-- <div class="mt-2">
-            </div> -->
           </div>
 
           <div>
