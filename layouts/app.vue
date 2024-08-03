@@ -22,7 +22,7 @@
                      class="fa-brands fa-square-facebook"></i></NuxtLink>
             </li>
             <li class="_social-link">
-               <NuxtLink to="https://www.linkedin.com/in/abdullah-mohammed-b47234121/" target="_blank"><i
+               <NuxtLink to="https://www.linkedin.com/in/abdullah-mohammed-%E3%83%84-b47234121/" target="_blank"><i
                      class="fa-brands fa-linkedin"></i></NuxtLink>
             </li>
             <li class="_social-link">
