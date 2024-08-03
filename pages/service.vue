@@ -3,7 +3,7 @@
       <h1 class="text-center font-semibold text-white text-7xl py-3.5">
          Service
       </h1>
-      <div class="grid grid-flow-row-dense grid-cols-3 ">
+      <div class="grid grid-flow-row-dense grid-cols-2 ">
          <UCard class="m-4 bg-slate-400">
             <h5 class="text-amber-400">
                UX Research
