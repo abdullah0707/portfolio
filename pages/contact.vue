@@ -3,7 +3,7 @@
     <h1 class="text-center font-semibold text-5xl py-7 text-white">Contact us</h1>
     <div class="flex flex-col h-100 justify-center px-6 lg:px-8 ">
       <div class="lg:mt-10 mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form class="space-y-6 text-sm mx-2" action="#" method="POST" @submit.prevent="submitForm(form)">
+        <form class="space-y-6 text-sm mx-2" action="#" method="POST" @submit.prevent="SubmitForm(form)">
           <div>
             <label for="name" class="block">
               <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
@@ -74,19 +74,18 @@
           <div>
             <button type="submit"
               class="flex w-full justify-center rounded-md bg-gray-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-gray-600">
-              <!-- <template v-if="waiting">
+              <template v-if="waiting">
                 <i class="fa-solid fa-spinner fa-spin-pulse p-1"></i>
                 Loading...
-              </template> -->
-              <!-- <template>
+              </template>
+              <template v-if="!waiting">
                 Sand Your Message
-              </template> -->
-              Sand Your Message
+              </template>
             </button>
           </div>
         </form>
       </div>
-      <!-- <div class="my-4 mx-auto w-1/3">
+      <div class="my-4 mx-auto w-1/3">
         <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="3"
           title="Your message was sent successfully!"
           description="Thank you for sending. Your message has been received. I will contact you as soon as possible."
@@ -97,16 +96,17 @@
           title="Your message was not sent!"
           description="I am sorry that your message did not reach me. Please try sending it again." :timeout="timer"
           :callback="onCallback()" :close-button="null" />
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 
-// const errors = ref(false);
-// const succsess = ref(false);
-// const timer = ref(3000);
+const waiting = ref(false);
+const errors = ref(false);
+const succsess = ref(false);
+const timer = ref(3000);
 
 useHead({
   titleTemplate: "%s Contact us",
@@ -122,13 +122,14 @@ const form = ref({
   subject: '',
   message: '',
 });
-// function onCallback() {
-//   setTimeout(() => {
-//     this.succsess = false;
-//     this.errors = false;
-//   }, this.timer);
-// }
-async function submitForm(form) {
+function onCallback() {
+  setTimeout(() => {
+    this.succsess = false;
+    this.errors = false;
+  }, this.timer);
+}
+async function SubmitForm(form) {
+  waiting.value = true;
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "abdullahelgammal25@gmail.com",
@@ -138,18 +139,17 @@ async function submitForm(form) {
     Subject: form.subject,
     Body: form
   }).then(
-    // this.succsess = true,
-    form = {
-      name: '',
-      email: '',
-      phone: '',
-      country: form.country,
-      subject: '',
-      message: '',
-    }
+    succsess.value = true,
+    waiting.value = false,
+    form.name = '',
+    form.email = '',
+    form.phone = '',
+    form.country = 'EG',
+    form.subject = '',
+    form.message = '',
   ).catch(error => {
     console.log(error),
-      this.errors = true
+      errors.value = true;
   })
 }
 </script>
