@@ -129,7 +129,6 @@ function onCallback() {
   }, this.timer);
 }
 async function submitForm(form) {
-  this.waiting = true;
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "abdullahelgammal25@gmail.com",
@@ -140,7 +139,6 @@ async function submitForm(form) {
     Body: form
   }).then(
     this.succsess = true,
-    this.waiting = false,
     console.log(this.succsess),
     this.form = {
       name: '',
@@ -152,8 +150,7 @@ async function submitForm(form) {
     }
   ).catch(error => {
     console.log(error),
-      this.errors = true,
-      this.waiting = false
+      this.errors = true
   })
 }
 </script>
