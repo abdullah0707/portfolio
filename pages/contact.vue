@@ -102,7 +102,12 @@
 </template>
 
 <script setup>
-const toast = useToast()
+
+const errors = ref(false);
+const succsess = ref(false);
+const waiting = ref(false);
+const timer = ref(3000);
+
 useHead({
   titleTemplate: "%s Contact us",
 })
@@ -147,16 +152,10 @@ async function submitForm(form) {
     }
   ).catch(error => {
     console.log(error),
-      this.errors = true
+      this.errors = true,
+      this.waiting = false
   })
 }
-
-const errors = ref(false);
-const succsess = ref(false);
-const waiting = ref(false);
-const timer = ref(3000);
-
-
 </script>
 
 <style></style>
