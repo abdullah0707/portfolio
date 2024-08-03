@@ -1,6 +1,6 @@
 <template>
   <div class="custom-section">
-    <div class=" h-screen overflow-scroll">
+    <div class="h-screen overflow-scroll">
       <h1 class="text-center font-semibold text-5xl py-7 text-white">Contact us</h1>
       <div class="flex flex-col h-100 justify-center px-6 lg:px-8 ">
         <div class="lg:mt-10 mt-2 sm:mx-auto sm:w-full sm:max-w-sm">

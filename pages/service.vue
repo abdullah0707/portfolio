@@ -1,9 +1,9 @@
 <template>
-   <div class="custom-section h-dvh">
-      <h1 class="text-center font-semibold text-white text-7xl pb-20">
-         Service
-      </h1>
-      <div class="h-dvh overflow-scroll">
+   <div class="custom-section overflow-scroll h-screen">
+      <div class="my-auto">
+         <h1 class="text-center font-semibold text-white text-7xl pt-10 pb-20">
+            Service
+         </h1>
          <div class="grid grid-flow-row-dense md:grid-cols-2 grid-cols-1">
             <UCard class="m-4 bg-slate-400">
                <h5 class="text-amber-400">

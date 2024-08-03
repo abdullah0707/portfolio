@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-section h-screen">
+  <div class="custom-section h-screen overflow-scroll">
     <div class="w-full text-center mt-3">
       <input class="checkbox-all" id="all" type="radio" name="checkbox" checked="" />
       <label for="all">
@@ -24,7 +24,7 @@
       <div class="seperator"></div>
       <!-- project  cards-->
       <div
-        class="cards grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 justify-items-center mb-8 w-auto h-screen overflow-scroll">
+        class="cards grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 justify-items-center mb-8 w-auto">
 
         <div class="project html ">
           <div class="portfolio snippet" data-cat="snippet">
@@ -167,8 +167,8 @@
                   </h1>
                   <div class="page ">
 
-                    <a href="https://belleksa.com/"
-                      class="template-btn bg-red-700 inline-block m-2 w-full text-center" target="_blank">View Dom</a>
+                    <a href="https://belleksa.com/" class="template-btn bg-red-700 inline-block m-2 w-full text-center"
+                      target="_blank">View Dom</a>
                   </div>
                 </div>
                 <div class="label-bg"></div>
@@ -189,8 +189,8 @@
                     <span class="code">/&gt;</span>
                   </h1>
                   <div class="page ">
-                    <a href="https://iipa.org.sa/ar"
-                      class="template-btn bg-red-700 inline-block m-2 w-full text-center" target="_blank">View Dom</a>
+                    <a href="https://iipa.org.sa/ar" class="template-btn bg-red-700 inline-block m-2 w-full text-center"
+                      target="_blank">View Dom</a>
                   </div>
                 </div>
                 <div class="label-bg"></div>

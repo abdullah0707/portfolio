@@ -1,6 +1,6 @@
 <template>
-  <div class="custom-section mx-auto">
-    <div class="mt-3 h-screen overflow-scroll">
+  <div class="custom-section mx-auto h-screen overflow-scroll">
+    <div class="mt-3">
       <div class="flex lg:flex-row max-lg:flex-col-reverse items-center">
         <div class="basis-1/2 max-lg:basis-3/4 text-white custem">
           <h1
