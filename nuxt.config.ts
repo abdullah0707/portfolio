@@ -1,15 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default ({
-   modules: ["@nuxt/ui", ['nuxt-mail', {
-      message: {
-         to: 'abdullahelgammal25@gmail.com',
-      },
-      smtp: {
-         host: "smtp.elasticemail.com",
-         port: 2525,
-      },
-   }],
-   ],
+   modules: ["@nuxt/ui"],
 
    ui: {
       global: true,

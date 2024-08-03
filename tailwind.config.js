@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [
-  "./components/**/*.{js,vue,ts}",
-  "./layouts/**/*.vue",
-  "./pages/**/*.vue",
-  "./plugins/**/*.{js,ts}",
-  "./nuxt.config.{js,ts}",
-  "./app.vue",
-  'docs/content/**/*.md'
-];
-export const theme = {
-  extend: {},
+
+module.export = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,vue,ts}",
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+    "./app.vue",
+    'docs/content/**/*.md'
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };
-export const plugins = [];
+

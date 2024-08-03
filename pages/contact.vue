@@ -22,7 +22,6 @@
               <input type="email" name="email" id="email" v-model="form.email" required
                 class="peer mt-1 px-3 py-2 text-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="you@example.com" />
-
             </label>
           </div>
           <div>
@@ -56,6 +55,7 @@
                 class="mt-1 px-3 py-2 text-white  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
                 placeholder="Topic title" />
             </label>
+
           </div>
 
           <div>
@@ -86,10 +86,10 @@
         </form>
       </div>
       <div class="my-4 mx-auto w-1/3">
-        <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="5"
+        <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="3"
           title="Your message was sent successfully!"
           description="Thank you for sending. Your message has been received. I will contact you as soon as possible."
-          :timeout="timer" :callback="onCallback()" :close-button="null" />
+          :close-button="null" :callback="onCallback()" :timeout="timer" />
       </div>
       <div class="my-4">
         <UNotification v-if="errors" label="Show toast" icon="i-heroicons-x-circle" color="red" :id="6"
@@ -102,7 +102,7 @@
 </template>
 
 <script setup>
-
+const toast = useToast()
 useHead({
   titleTemplate: "%s Contact us",
 })
@@ -119,13 +119,11 @@ const form = ref({
 });
 function onCallback() {
   setTimeout(() => {
-    this.errors = false;
     this.succsess = false;
+    this.errors = false;
   }, this.timer);
 }
 async function submitForm(form) {
-  this.errors = false;
-  this.succsess = false;
   this.waiting = true;
   Email.send({
     Host: "smtp.elasticemail.com",
