@@ -78,14 +78,15 @@
                 <i class="fa-solid fa-spinner fa-spin-pulse p-1"></i>
                 Loading...
               </template> -->
-              <template>
+              <!-- <template>
                 Sand Your Message
-              </template>
+              </template> -->
+              Sand Your Message
             </button>
           </div>
         </form>
       </div>
-      <div class="my-4 mx-auto w-1/3">
+      <!-- <div class="my-4 mx-auto w-1/3">
         <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="3"
           title="Your message was sent successfully!"
           description="Thank you for sending. Your message has been received. I will contact you as soon as possible."
@@ -96,16 +97,16 @@
           title="Your message was not sent!"
           description="I am sorry that your message did not reach me. Please try sending it again." :timeout="timer"
           :callback="onCallback()" :close-button="null" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script setup>
 
-const errors = ref(false);
-const succsess = ref(false);
-const timer = ref(3000);
+// const errors = ref(false);
+// const succsess = ref(false);
+// const timer = ref(3000);
 
 useHead({
   titleTemplate: "%s Contact us",
@@ -121,12 +122,12 @@ const form = ref({
   subject: '',
   message: '',
 });
-function onCallback() {
-  setTimeout(() => {
-    this.succsess = false;
-    this.errors = false;
-  }, this.timer);
-}
+// function onCallback() {
+//   setTimeout(() => {
+//     this.succsess = false;
+//     this.errors = false;
+//   }, this.timer);
+// }
 async function submitForm(form) {
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -137,8 +138,7 @@ async function submitForm(form) {
     Subject: form.subject,
     Body: form
   }).then(
-    this.succsess = true,
-    console.log(this.succsess),
+    // this.succsess = true,
     this.form = {
       name: '',
       email: '',
