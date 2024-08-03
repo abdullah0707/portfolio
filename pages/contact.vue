@@ -55,7 +55,6 @@
                 class="mt-1 px-3 py-2   border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:ring-yellow-400 block w-full rounded-md sm:text-sm focus:ring-5"
                 placeholder="Topic title" />
             </label>
-
           </div>
 
           <div>
@@ -83,13 +82,13 @@
           </div>
         </form>
       </div>
-      <div class="my-4 mx-auto w-1/3">
+      <div class="my-4 mx-auto w-full">
         <UNotification v-if="succsess" icon="i-heroicons-check-circle" color="primary" :id="3"
           title="Your message was sent successfully!"
           description="Thank you for sending. Your message has been received. I will contact you as soon as possible."
           :close-button="null" :callback="onCallback()" :timeout="timer" />
       </div>
-      <div class="my-4">
+      <div class="my-4 mx-auto w-full">
         <UNotification v-if="errors" label="Show toast" icon="i-heroicons-x-circle" color="red" :id="6"
           title="Your message was not sent!"
           description="I am sorry that your message did not reach me. Please try sending it again." :timeout="timer"
