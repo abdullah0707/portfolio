@@ -1,31 +1,31 @@
 @media (min-width: 319px) {
   .custom-section {
-    padding: 30% 5% !important;
+    padding: 30% 5% 0% !important;
   }
 }
 @media (min-width: 425px) {
   .custom-section {
-    padding: 25% 5% !important;
+    padding: 25% 5% 0% !important;
   }
 }
 @media (min-width: 700px) {
   .custom-section {
-    padding: 5% 5% !important;
+    padding: 5% 5% 0% !important;
   }
 }
 @media (min-width: 1000px) {
   .custom-section {
-    padding: 9% 5% !important;
+    padding: 9% 5% 0% !important;
   }
 }
 @media (min-width: 1400px) {
   .custom-section {
-    padding: 5% 5% !important;
+    padding: 5% 5% 0% !important;
   }
 }
 @media (min-width: 1500px) {
   .custom-section {
-    padding: 2% 5% !important;
+    padding: 2% 5% 0% !important;
   }
 }
 

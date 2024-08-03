@@ -39,7 +39,7 @@
  [type=radio]:not(:checked) + label:after {
    content: "";
    border-radius: 2px;
-   height: 21px;
+   height: 0.7em;
    padding: 5px;
    position: absolute;
    bottom: 0;
