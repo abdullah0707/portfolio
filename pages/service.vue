@@ -3,7 +3,7 @@
       <h1 class="text-center font-semibold text-white text-7xl py-3.5">
          Service
       </h1>
-      <div class="grid grid-flow-row-dense grid-cols-2 ">
+      <div class="grid grid-flow-row-dense md:grid-cols-2 grid-cols-1">
          <UCard class="m-4 bg-slate-400">
             <h5 class="text-amber-400">
                UX Research
@@ -24,7 +24,7 @@
          </UCard>
       </div>
 
-      <div class="grid grid-flow-row-dense grid-cols-5">
+      <div class="grid grid-flow-row-dense md:grid-cols-5 grid-cols-1">
          <UCard class="m-4 col-span-2 card">
             <h5 class="text-amber-400">
                UX Consultation
@@ -46,7 +46,7 @@
             </p>
          </UCard>
       </div>
-      <div class="grid grid-flow-row-dense grid-cols-5">
+      <div class="grid grid-flow-row-dense md:grid-cols-5 grid-cols-1">
          <UCard class="m-4 col-span-3">
             <h5 class="text-amber-400">
                Mobile Apps Design
