@@ -2,15 +2,13 @@
   <div
     class="custom-section h-screen uppercase lg:text-4xl md:text3xl sm:text2xl text-white flex justify-center items-center flex-col">
     <div class="w-fit">
-      <div class="showup text-center">CREATIVE</div>
+      <div class="showup text-center">ABDULLAH MOHAMED</div>
+      <p class="slogan mx-auto w-fit">
+        front-end NUXT.JS
+      </p>
       <div class="slidein text-center">
         <h6 style="letter-spacing: .6em;">developer</h6>
       </div>
-      <p class="slogan mx-auto w-fit">
-        sensible to front-end
-        <span>
-        </span>
-      </p>
     </div>
   </div>
   <div class="shadow-title">Welcome to Portfolio</div>
