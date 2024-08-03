@@ -1,6 +1,6 @@
 <template>
   <div class="custom-section h-screen overflow-scroll">
-    <h1 class="text-center font-semibold text-white text-6xl pt-10 pb-20">Contact me</h1>
+    <h1 class="text-center font-semibold text-white text-6xl pt-10 pb-20">Contact Me</h1>
     <div class="flex flex-col h-100 justify-center px-6 lg:px-8 ">
       <div class="lg:mt-10 mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
         <form class="space-y-6 text-sm mx-2" action="#" method="POST" @submit.prevent="SubmitForm(form)">
