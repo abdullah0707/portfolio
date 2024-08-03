@@ -74,11 +74,11 @@
           <div>
             <button type="submit"
               class="flex w-full justify-center rounded-md bg-gray-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-gray-600">
-              <template v-if="waiting">
+              <!-- <template v-if="waiting">
                 <i class="fa-solid fa-spinner fa-spin-pulse p-1"></i>
                 Loading...
-              </template>
-              <template v-if="!waiting">
+              </template> -->
+              <template>
                 Sand Your Message
               </template>
             </button>
@@ -105,7 +105,6 @@
 
 const errors = ref(false);
 const succsess = ref(false);
-const waiting = ref(false);
 const timer = ref(3000);
 
 useHead({
