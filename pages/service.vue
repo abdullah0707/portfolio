@@ -1,11 +1,11 @@
 <template>
    <div class="custom-section overflow-scroll h-screen">
       <div class="my-auto">
-         <h1 class="text-center font-semibold text-white text-7xl pt-10 pb-20">
+         <h1 class="text-center font-semibold text-white text-7xl pt- pb-20">
             Service
          </h1>
          <div class="grid grid-flow-row-dense md:grid-cols-2 grid-cols-1">
-            <UCard class="m-4 bg-slate-400">
+            <UCard class="m-4 bg-slate-900">
                <h5 class="text-amber-400">
                   UX Research
                </h5>
@@ -14,7 +14,7 @@
                   user audience, working on user stories, competitive analysis and much more.
                </p>
             </UCard>
-            <UCard class="m-4 bg-slate-400">
+            <UCard class="m-4 bg-slate-900">
                <h5 class="text-amber-400">
                   UX Auditing
                </h5>
@@ -26,7 +26,7 @@
          </div>
 
          <div class="grid grid-flow-row-dense md:grid-cols-5 grid-cols-1">
-            <UCard class="m-4 col-span-2 card">
+            <UCard class="m-4 bg-slate-900 col-span-2 card">
                <h5 class="text-amber-400">
                   UX Consultation
                </h5>
@@ -35,7 +35,7 @@
                   your business and your budget.
                </p>
             </UCard>
-            <UCard class="m-4 col-span-3">
+            <UCard class="m-4 bg-slate-900 col-span-3">
                <h5 class="text-amber-400">
                   Front End Development
                </h5>
@@ -48,7 +48,7 @@
             </UCard>
          </div>
          <div class="grid grid-flow-row-dense md:grid-cols-5 grid-cols-1">
-            <UCard class="m-4 col-span-3">
+            <UCard class="m-4 bg-slate-900 col-span-3">
                <h5 class="text-amber-400">
                   Mobile Apps Design
                </h5>
@@ -57,7 +57,7 @@
                   will work on the app design from scratch to final tested prototype.
                </p>
             </UCard>
-            <UCard class="m-4 col-span-2">
+            <UCard class="m-4 bg-slate-900 col-span-2">
                <h5 class="text-amber-400">
                   Responsive Web Design
                </h5>
