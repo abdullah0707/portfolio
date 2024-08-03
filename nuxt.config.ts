@@ -5,7 +5,11 @@ export default ({
    ui: {
       global: true,
    },
-
+   nitor: {
+      prerender: {
+         autoSubfolderIndex: false,
+      }
+   },
    app: {
       head: {
          title: `Abdullah | `,
