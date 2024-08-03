@@ -47,9 +47,4 @@
 <script setup>
 
 </script>
-<style>
-@import url('https://fonts.googleapis.com');
-@import url('https://fonts.gstatic.com');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-</style>
+<style></style>

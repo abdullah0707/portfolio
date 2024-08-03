@@ -26,8 +26,16 @@ export default ({
                crossorigin: "anonymous",
                referrerpolicy: "no-referrer"
             },
+            {
+               rel: 'stylesheet',
+               href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap',
+            },
+            {
+               rel: 'stylesheet',
+               href: 'https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap',
+            },
          ],
-         script: [{src:'https://smtpjs.com/v3/smtp.js'}]
+         script: [{ src: 'https://smtpjs.com/v3/smtp.js' }]
       },
    },
 
