@@ -139,14 +139,14 @@ async function submitForm(form) {
     Body: form
   }).then(
     // this.succsess = true,
-    this.form = {
-      name: '',
-      email: '',
-      phone: '',
-      country: form.country,
-      subject: '',
-      message: '',
-    }
+    // this.form = {
+    //   name: '',
+    //   email: '',
+    //   phone: '',
+    //   country: form.country,
+    //   subject: '',
+    //   message: '',
+    // }
   ).catch(error => {
     console.log(error),
       this.errors = true
