@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-section h-screen">
+  <div class="custom-section h-screen overflow-scroll">
     <div class="wrapper">
       <div class="w-full text-center">
         <input class="checkbox-all" id="all" type="radio" name="checkbox" checked="" />

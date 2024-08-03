@@ -1,5 +1,5 @@
 <template>
-   <div class="custom-section h-screen">
+   <div class="custom-section h-dvh overflow-scroll">
       <h1 class="text-center font-semibold text-white text-7xl py-3.5">
          Service
       </h1>

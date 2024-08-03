@@ -1,6 +1,6 @@
 <template>
   <div
-    class="custom-section h-screen uppercase lg:text-4xl md:text3xl sm:text2xl text-white flex justify-center items-center flex-col">
+    class="custom-section h-screen uppercase lg:text-4xl md:text3xl sm:text2xl text-white flex justify-center items-center flex-col overflow-scroll">
     <div class="w-fit">
       <div class="showup text-center">ABDULLAH MOHAMED</div>
       <p class="slogan mx-auto w-fit">
