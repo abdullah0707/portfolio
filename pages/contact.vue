@@ -135,7 +135,7 @@ async function SubmitForm(form) {
     Username: "abdullahelgammal25@gmail.com",
     Password: "B029B2FF0363704FC6D2DB25949CE702253F",
     To: 'abdullahelgammal25@gmail.com',
-    From: form.email,
+    From: 'abdullahelgammal25@gmail.com',
     Subject: form.subject,
     Body: form
   }).then(
