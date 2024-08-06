@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.7",
-    "@heroicons/vue": "^2.0.13",
-    "nuxt-mail": "^5.0.1"
+    "@heroicons/vue": "^2.0.13"
   }
 }
